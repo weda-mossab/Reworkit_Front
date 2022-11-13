@@ -1,0 +1,245 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff; }
+
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Montserrat', sans-serif;
+   }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a:hover {
+    text-decoration: none !important; }
+
+
+
+h2 {
+  font-size: 20px; }
+
+.half, .half .container > .row {
+  height: 100vh;
+  min-height: 700px; }
+
+@media (max-width: 991.98px) {
+  .half .bg {
+    height: 300px; 
+    width: 100%;
+} }
+
+.half .contents {
+  margin-top: -50px;}
+
+.half .contents, .half .bg {
+  width: 50%; }
+
+  @media (max-width: 1199.98px) {
+    .half .contents, .half .bg {
+      width: 97%; } }
+
+.half .bg {
+  background-size: cover;
+  background-position: center; 
+  margin: 15px;
+  border-radius: 10px; }
+
+.half .btn {
+  height: 54px;
+  padding-left: 30px;
+  padding-right: 30px; 
+  border-radius: 35px;
+  font-weight: 600;
+  background-color: #5E59B1;
+  color: white;
+  margin-top: -30px;
+}
+
+.half .btn:hover{
+  box-shadow: 0 0 6px 1px #5E59B1;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
+}
+
+.half .forgot-pass {
+  position: relative;
+  top: 2px;
+  font-size: 14px; }
+
+  .half .btn1 {
+    margin-top: 35px;
+    height: 54px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    border-radius: 35px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #5E59B1;
+  }
+  .half .bg .reg{
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    border-radius: 35px;
+    font-weight: 600;
+    background-color: #5E59B1;
+    color: white;
+    text-decoration: none;
+    border: none;}
+  
+  .half .bg .reg:hover{
+    box-shadow: 0 0 6px 1px #5E59B1;
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+  }
+  
+  .half .forgot-pass {
+    position: relative;
+    top: -20px;
+    font-size: 14px; 
+    text-decoration: none;
+    color: black;
+  }
+  
+  .wlcm{
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .log{
+    font-weight: 600;
+    font-size: 27px;
+    margin-top: -20px;
+    letter-spacing: 1px;
+  }
+  
+  .wrap-input100 {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 37px;
+  }
+  
+  .input100 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+    --------------------------------------------- 
+    .focus-input100 {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      font-family: 'Montserrat', sans-serif;
+       border-top: none;
+    }
+  
+    .focus-input100::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+      background: #5E59B1;
+        border-left: none;
+    }
+  
+    .focus-input100::after {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      color: #999999;
+      line-height: 1.2;
+      content: attr(data-placeholder);
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 16px;
+      left: 0px;
+      padding-left: 5px;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+        border-right: none;
+    }
+  
+  .input100::-webkit-input-placeholder { 
+   font-family: 'Montserrat', sans-serif;
+   color: black;
+  }
+  
+  .input100:-moz-placeholder { 
+   font-family: 'Montserrat', sans-serif;
+   color: black;
+  }
+  
+  .input100:focus + .focus-input100::after {
+    top: -15px;
+  }
+  
+  .input100:focus + .focus-input100::before {
+    width: 100%;
+  }
+  
+  .has-val.input100 + .focus-input100::after {
+    top: -15px;
+  }
+  
+  .has-val.input100 + .focus-input100::before {
+    width: 100%;
+  }
+  
+  .btn-show-pass {
+    font-size: 15px;
+    color: #999999;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding-right: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .btn-show-pass:hover {
+    color: #5E59B1;
+  }
